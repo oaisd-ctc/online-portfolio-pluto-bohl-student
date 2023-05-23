@@ -1,0 +1,3 @@
+function whar() {
+    return
+}

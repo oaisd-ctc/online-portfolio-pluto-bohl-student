@@ -1,0 +1,62 @@
+body {
+  background-color: #AAAAAA;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  position: relative;
+  animation-name: dropdown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+@keyframes dropdown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+body h2 {
+  text-align: center;
+}
+body p {
+  text-align: center;
+}
+
+section.navbar ul {
+  list-style-type: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #BDE0FE;
+}
+section.navbar li {
+  float: left;
+  border-right: 1px solid black;
+}
+section.navbar li:last-child {
+  border-right: none;
+}
+section.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+section.navbar li a:hover {
+  background-color: #829bb0;
+  font-style: italic;
+}
+section.navbar li a:visited {
+  color: black;
+}
+section.navbar .active {
+  font-weight: bold;
+  color: black;
+}
