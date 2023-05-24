@@ -5,17 +5,35 @@ $color4: #BDE0FE;
 $color5: #A2D2FF;
 
 body {
-    background-color: #AAAAAA;
+    // background-color: #AAAAAA;
+    background-image: url(../../images/space.png);
+    background-size: 92em;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
+    position: relative;
+
     h1 {
         text-align: center;
         position: relative;
         animation-name: dropdown;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+    }
+
+    .asteroid1 {
+        width: 79px;
+        height: 75px;
+        filter: invert(100%);
+        position: absolute;
+        left: 45em;
+        bottom: 5.3em;
+        // animation-name: dropdown;
+        // animation-duration: 1s;
+        // animation-timing-function: ease-in-out;
+        // animation-delay: 0.2s;
     }
 
     @keyframes dropdown {
@@ -78,6 +96,33 @@ section {
         .active {
             font-weight: bold;
             color: black;
+        }
+    }
+}
+
+section {
+    #section2 {
+        .aboutme {
+            line-height: 60%;
+        }
+
+        .shortbr {
+            display: block;
+            margin: 6px 0;
+        }
+    
+        #abtmehead {
+            margin: auto;
+            border-bottom:3px solid $color3;
+            width: 145px;
+        }
+
+        #me {
+            display: block;
+            width: 290px;
+            height: 400px;
+            border: 2px solid white;
+            margin: auto;
         }
     }
 }
