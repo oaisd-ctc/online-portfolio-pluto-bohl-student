@@ -1,25 +1,13 @@
-console.log("Starting Asteroid1 Animation...");
+const anime = require('animejs');
 
 let [milliseconds,seconds,minutes,hours] = [0,0,0,0];
 let int = null;
 
-int = setInterval(displayTimer,10);
+let totalTime = null;
 
-var id = setInterval(frame, 5);
-var done = false;
+var id = null;
 
-function frame() {
-    var asteroid = document.getElementById("asteroid1");
-    var pos = 0;
-
-    if (done == true) {
-        clearInterval(id);
-    } else {
-        // console.log("test") Test worked
-    }
-}
-
-function displayTimer() {
+function timer() {
     milliseconds+=10;
     if (milliseconds == 1000) {
         milliseconds = 0;
@@ -27,12 +15,19 @@ function displayTimer() {
         if (seconds == 60) {
             seconds = 0;
             minutes++;
-            if (minutes == 60) {
-                minutes == 0;
-                hours++;
-            }
         }
     }
+    let s = seconds < 10 ? "0" + seconds : seconds;
+    let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
+
+    let totalTime = s + "." + ms;
+
+    return totalTime;
 }
 
-console.log("Asteroid Animation Complete!");
+var myAnimation = anime({
+    targets: '.asteroid1',
+    translateX: '13rem',
+    duration: 2000,
+    loop: true
+  });

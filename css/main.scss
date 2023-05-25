@@ -12,6 +12,25 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.asteroid1 {
+    width: 79px;
+    height: 75px;
+    filter: invert(100%);
+    position: absolute;
+    left: 45em;
+    bottom: 91.5%;
+}
+
+@keyframes dropdownRight {
+    from {
+        transform: translateY(-100px) translateX(100px);
+    }
+    to {
+        transform: translateY(0px) translateX(0px);
+    }
+
+}
+
 header {
     position: relative;
 
@@ -21,19 +40,6 @@ header {
         animation-name: dropdown;
         animation-duration: 1s;
         animation-timing-function: ease-out;
-    }
-
-    .asteroid1 {
-        width: 79px;
-        height: 75px;
-        filter: invert(100%);
-        position: absolute;
-        left: 45em;
-        bottom: 5.3em;
-        // animation-name: dropdown;
-        // animation-duration: 1s;
-        // animation-timing-function: ease-in-out;
-        // animation-delay: 0.2s;
     }
 
     @keyframes dropdown {

@@ -5,6 +5,23 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.asteroid1 {
+  width: 79px;
+  height: 75px;
+  filter: invert(100%);
+  position: absolute;
+  left: 45em;
+  bottom: 91.5%;
+}
+
+@keyframes dropdownRight {
+  from {
+    transform: translateY(-100px) translateX(100px);
+  }
+  to {
+    transform: translateY(0px) translateX(0px);
+  }
+}
 header {
   position: relative;
 }
@@ -14,14 +31,6 @@ header h1 {
   animation-name: dropdown;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-}
-header .asteroid1 {
-  width: 79px;
-  height: 75px;
-  filter: invert(100%);
-  position: absolute;
-  left: 45em;
-  bottom: 5.3em;
 }
 @keyframes dropdown {
   from {
@@ -39,7 +48,7 @@ body p {
   text-align: center;
 }
 
-section .navbar ul {
+section.navbar ul {
   list-style-type: none;
   color: black;
   margin: 0;
@@ -47,14 +56,14 @@ section .navbar ul {
   overflow: hidden;
   background-color: #BDE0FE;
 }
-section .navbar li {
+section.navbar li {
   float: left;
   border-right: 1px solid black;
 }
-section .navbar li:last-child {
+section.navbar li:last-child {
   border-right: none;
 }
-section .navbar li a {
+section.navbar li a {
   display: block;
   color: black;
   text-align: center;
@@ -62,31 +71,31 @@ section .navbar li a {
   text-decoration: none;
   transition: background-color 0.5s;
 }
-section .navbar li a:hover {
+section.navbar li a:hover {
   background-color: #829bb0;
   font-style: italic;
 }
-section .navbar li a:visited {
+section.navbar li a:visited {
   color: black;
 }
-section .navbar .active {
+section.navbar .active {
   font-weight: bold;
   color: black;
 }
 
-section #section2 .aboutme {
+section#section2 .aboutme {
   line-height: 60%;
 }
-section #section2 .shortbr {
+section#section2 .shortbr {
   display: block;
   margin: 6px 0;
 }
-section #section2 #abtmehead {
+section#section2 #abtmehead {
   margin: auto;
   border-bottom: 3px solid #FFAFCC;
   width: 145px;
 }
-section #section2 #me {
+section#section2 #me {
   display: block;
   width: 290px;
   height: 400px;

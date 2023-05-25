@@ -23,5 +23,9 @@
 				"ritwickdey.LiveServer"
 			]
 		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers-contrib/features/npm-package:1": {}
 	}
 }
