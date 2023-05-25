@@ -8,38 +8,30 @@ body {
 .asteroid1 {
   width: 79px;
   height: 75px;
-  filter: invert(100%);
   position: absolute;
-  left: 45em;
+  filter: invert(100%);
+  left: 39%;
   bottom: 91.5%;
 }
 
-@keyframes dropdownRight {
-  from {
-    transform: translateY(-100px) translateX(100px);
-  }
-  to {
-    transform: translateY(0px) translateX(0px);
-  }
-}
 header {
   position: relative;
 }
 header h1 {
   text-align: center;
-  position: relative;
-  animation-name: dropdown;
+  /* position: relative; */
+  /* animation-name: dropdown;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out; */
 }
-@keyframes dropdown {
+/* @keyframes dropdown {
   from {
     transform: translateY(-100px);
   }
   to {
     transform: translateY(0px);
   }
-}
+} */
 
 body h2 {
   text-align: center;
@@ -101,4 +93,10 @@ section#section2 #me {
   height: 400px;
   border: 2px solid white;
   margin: auto;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: green;
 }

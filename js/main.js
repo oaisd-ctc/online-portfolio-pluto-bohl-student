@@ -25,9 +25,13 @@ function timer() {
     return totalTime;
 }
 
-var myAnimation = anime({
-    targets: '.asteroid1',
-    translateX: '13rem',
+var animation = anime({
+    targets: 'div',
+    translateX: 100,
+    borderRadius: 50,
     duration: 2000,
-    loop: true
-  });
+    easing: 'linear',
+    direction: 'alternate'
+})
+
+document.querySelector('.play-pause-demo .play').onclick = animation.play;
