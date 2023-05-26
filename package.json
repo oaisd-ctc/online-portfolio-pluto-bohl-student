@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "animejs": "^3.2.1",
-    "requirejs": "^2.3.6"
+    "animejs": "^3.2.1"
   }
 }

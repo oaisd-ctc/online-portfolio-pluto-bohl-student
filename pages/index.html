@@ -9,9 +9,20 @@
 
         <link rel="stylesheet" href="../css/dist/main.css">
         <link rel="icon" href="../images/pluto.png">
-        <script src="../js/main.js"></script>
+        <script nomodule src="../js/main.js"></script>
         <script src="../node_modules/animejs/lib/anime.min.js"></script>
-        <script data-main="../js/main" src="../js/require.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script>
+            anime({
+                targets: '#demo-input',
+                value: [0, 100],
+                duration: 5000,
+                round: 1,
+                easing: linear,
+                direction: 'alternate',
+                loop: true
+            });
+        </script>
     </head>
 
     <body>
@@ -19,7 +30,8 @@
             <section class="play-pause-demo">
                 <h1 class="name">pluto's portfolio</h1>
             </section>
-            <button id="play" onclick="animTest">play</button>
+
+            <input id="demo-input" value="0">
 
             <section class="navbar">
                 <ul>
@@ -46,7 +58,5 @@
             <br class="shortbr">
             <img src="../images/me.jpg" alt="A picture of me" id="me">
         </section>
-
-        <div></div>
     </body>
 </html>
