@@ -1,6 +1,7 @@
-const anime = require('animejs');
+var requirejs = require('requirejs');
+var anime = require('animejs');
 
-let animation = anime({
+let animTest = anime({
     targets: 'div',
     translateX: 100,
     borderRadius: 50,

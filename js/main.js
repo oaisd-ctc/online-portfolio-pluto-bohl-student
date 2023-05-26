@@ -25,7 +25,7 @@ function timer() {
     return totalTime;
 }
 
-var animation = anime({
+var animTest = anime({
     targets: 'div',
     translateX: 100,
     borderRadius: 50,
