@@ -7,31 +7,13 @@
         <meta name="description" content="pluto's portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../css/dist/main.css">
+        <link rel="stylesheet" href="../css/main.css">
         <link rel="icon" href="../images/pluto.png">
-        <script nomodule src="../js/main.js"></script>
-        <script src="../node_modules/animejs/lib/anime.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <script>
-            anime({
-                targets: '#demo-input',
-                value: [0, 100],
-                duration: 5000,
-                round: 1,
-                easing: linear,
-                direction: 'alternate',
-                loop: true
-            });
-        </script>
     </head>
 
     <body>
         <header>
-            <section class="play-pause-demo">
-                <h1 class="name">pluto's portfolio</h1>
-            </section>
-
-            <input id="demo-input" value="0">
+            <h1 class="name">pluto's portfolio</h1>
 
             <section class="navbar">
                 <ul>
@@ -43,20 +25,35 @@
             </section>
         </header>
 
-        <section>
-            <img src="../images/asteroid1.png" class="asteroid1">
-        </section>
+        <img src="../images/asteroid1.png" class="asteroid1">
 
         <br>
 
         <section id="section2">
-            <h2 id="abtmehead">About Me</h2>
+            <h2 class="abtmehead">About Me</h2>
             <section class="aboutme">
                 <p>Hi! My name is pluto (yes, I prefer the p to be lowercase). </p>
                 <p>I am a 16 year old junior currently attending Hudsonville High School and Careerline Tech Center.</p>
             </section>
             <br class="shortbr">
-            <img src="../images/me.jpg" alt="A picture of me" id="me">
+            <div class="container">
+                <img src="../images/me.jpg" alt="A picture of me" class="me">
+                <div class="overlay">
+                    <div class="text">Hey! It's me!</div>
+                </div>
+            </div>
         </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script>
+            anime({
+                targets: '.asteroid1',
+                delay: 500,
+                translateX: -1058,
+                translateY: 1048,
+                duration: 1000,
+                easing: 'cubicBezier(.005, .235, 1, .095)'
+            })
+        </script>
     </body>
 </html>

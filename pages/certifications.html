@@ -7,7 +7,7 @@
         <meta name="description" content="pluto's portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../css/dist/main.css">
+        <link rel="stylesheet" href="../css/main.css">
         <link rel="icon" href="../images/pluto.png">
         <script src="../js/dist/main.dev.js"></script>
     </head>
@@ -25,5 +25,19 @@
                 </ul>
             </section>
         </header>
+
+        <img src="../images/asteroid1.png" class="asteroid1">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script>
+            anime({
+                targets: '.asteroid1',
+                delay: 500,
+                translateX: -1058,
+                translateY: 1048,
+                duration: 1000,
+                easing: 'cubicBezier(.070, .520, .935, .555)'
+            })
+        </script>
     </body>
 </html>
