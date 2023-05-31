@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-        <title>pluto's portfolio</title>
+        <title>Contact Me | pluto's portfolio</title>
         <meta charset="utf-8">
         <meta name="author" content="pluto">
         <meta name="description" content="pluto's portfolio">
@@ -12,7 +12,7 @@
         <script src="../js/dist/main.dev.js"></script>
     </head>
 
-    <body>
+    <body onbeforeunload="javascript:changeTitleLoad()">
         <header>
             <h1 class="name">pluto's portfolio</h1>
 
@@ -20,16 +20,45 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="class-projects.html">Class Projects</a></li>
-                    <li><a href="javascript:void(0)" class="active">Personal Projects</a></li>
                     <li><a href="certifications.html">My Certifications</a></li>
+                    <li><a href="javascript:void(0)" class="active">Contact Me</a></li>
                 </ul>
             </section>
         </header>
 
         <img src="../images/asteroid1.png" class="asteroid1">
 
+        <section>
+            <h2 class="abtmehead" style="width:160px">Contact Me</h2>
+        </section>
+
+        <section>
+            <h3>You Can Contact Me At These Places!</h3>
+
+            <div class="moreFlexBox">
+                <div class="flexbox">
+                    <h4>My Phone Number</h4>
+                    <p>+1 (616) - 840 - 1158</p>
+                    <p class="comment">(iPhone)</p>
+                </div>
+
+                <div class="flexbox">
+                    <h4>My School Emails</h4>
+                    <p>Hudsonville High School: abohl@hpsstudents.net</p>
+                    <p>Careerline Tech Center: aibod75@student.oaisd.org</p>
+                    <p class="comment">(Both are gmail)</p>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <script>
+            function changeTitleLoad() {
+                document.title = "You Found The Easter Egg!";
+            }
+
             anime({
                 targets: '.asteroid1',
                 delay: 500,
@@ -40,4 +69,9 @@
             })
         </script>
     </body>
+
+    <footer>
+        <hr class="footerHr">
+        <p>Copyright &copy 2023 | pluto</p>
+    </footer>
 </html>

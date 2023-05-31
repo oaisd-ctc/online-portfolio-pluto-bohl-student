@@ -38,6 +38,10 @@ body h2 {
   text-align: center;
 }
 
+body h3 {
+  text-align: center;
+}
+
 body p {
   text-align: center;
 }
@@ -97,7 +101,50 @@ section#section2 .me {
   margin: auto;
   border-radius: 25px;
 }
-section#section2 .me:hover {
-  transition: .5s ease-in-out;
-  filter: blur(5px);
+section .flexbox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align:center;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 525px;
+  margin: auto;
+}
+section .flexbox img {
+  height: 250px;
+  width: 400px;
+  margin: auto;
+}
+section .flexbox p {
+  margin: 0.4px;
+}
+section .comment {
+  font-size: 10px;
+}
+section a {
+  text-decoration: none;
+  color: white;
+}
+section .certifications img {
+  height: 250px;
+  width: 250px;
+}
+section .moreFlexBox {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-content: space-evenly;
+  margin: auto;
+}
+section #flexbox2 {
+  height: 393px;
+  /* I had to get VERY close to my monitor to line those up */
+}
+
+footer .footerHr {
+  width: 75%;
+}
+#resume {
+  text-align: center;
 }

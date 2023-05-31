@@ -11,7 +11,7 @@
         <link rel="icon" href="../images/pluto.png">
     </head>
 
-    <body>
+    <body onbeforeunload="javascript:changeTitleLoad()">
         <header>
             <h1 class="name">pluto's portfolio</h1>
 
@@ -19,8 +19,8 @@
                 <ul>
                     <li><a href="javascript:void(0)" class="active">Home</a></li>
                     <li><a href="class-projects.html">Class Projects</a></li>
-                    <li><a href="personal-projects.html">Personal Projects</a></li>
                     <li><a href="certifications.html">My Certifications</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </section>
         </header>
@@ -36,16 +36,27 @@
                 <p>I am a 16 year old junior currently attending Hudsonville High School and Careerline Tech Center.</p>
             </section>
             <br class="shortbr">
-            <div class="container">
-                <img src="../images/me.jpg" alt="A picture of me" class="me">
-                <div class="overlay">
-                    <div class="text">Hey! It's me!</div>
-                </div>
-            </div>
+            <img src="../images/me.jpg" alt="A picture of me" class="me">
         </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section id="resume">
+            <h2 class="abtmehead">My Resume</h2>
+            <br class="shortbr">
+            <p>Click <strong><a href="../resume/pluto-bohl-resume.pdf" download>Here</a> </strong>To Download My Resume!</p>
+        </section>
+
+        <br>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <script>
+            function changeTitleLoad() {
+                document.title = "You Found The Easter Egg!";
+            }
+
             anime({
                 targets: '.asteroid1',
                 delay: 500,
@@ -56,4 +67,9 @@
             })
         </script>
     </body>
+
+    <footer>
+        <hr class="footerHr">
+        <p>Copyright &copy 2023 | pluto</p>
+    </footer>
 </html>

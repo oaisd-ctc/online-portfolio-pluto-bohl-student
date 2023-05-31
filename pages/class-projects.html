@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-        <title>pluto's portfolio</title>
+        <title>Class Projects | pluto's portfolio</title>
         <meta charset="utf-8">
         <meta name="author" content="pluto">
         <meta name="description" content="pluto's portfolio">
@@ -12,7 +12,7 @@
         <script src="../js/dist/main.dev.js"></script>
     </head>
 
-    <body>
+    <body onbeforeunload="javascript:changeTitleLoad()">
         <header>
             <h1 class="name">pluto's portfolio</h1>
 
@@ -20,8 +20,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="javascript:void(0)" class="active">Class Projects</a></li>
-                    <li><a href="personal-projects.html">Personal Projects</a></li>
                     <li><a href="certifications.html">My Certifications</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </section>
         </header>
@@ -32,12 +32,43 @@
             <h2 class="abtmehead" style="width: 225px">My Class Projects</h2>
             <p>Here are 2 of the projects I worked on at Careerline Tech Center!</p>
 
+            <div class="moreFlexBox">
+                <div class="flexbox">
+                    <h4>Delivery Driver</h4>
+                    <img src="../images/deliverydriver.PNG" alt="Picture of My Game 'Delivery Driver'">
+                    <p>Delivery Driver is the first game I made!</p>
+                    <p>It is a small and simple game, the goal is to drive around and deliver packages.</p>
+                    <p class="comment">(though i just like driving around haha)</p>
+                </div>
+
+                <div class="flexbox" id="flexbox2">
+                    <h4>Makk Attakk: Attakk Of The Makk</h4>
+                    <img src="../images/makkattakk.PNG" alt="Picture of Makk Attakk">
+                    <p>Makk Attakk is the most recent & largest project that I've worked on.</p>
+                    <p>It was a group project between me and two others.</p>
+                    <p class="comment">(This game is a bit goofy, but good!)</p>
+                </div>
+            </div>
             <!-- Delivery Driver - 1st Project -->
             <!-- Makk Attakk: Attakk of the Makk - Largest Project So Far -->
         </section>
 
+        <br>
+        <br>
+
+        <section>
+            <h2 class="abtmehead" style="width:230px"><a href="https://github.com/pluto-bohl-student" target="_blank">My Github Profile</a></h2>
+            <p class="comment">(click on the text above!)</p>
+        </section>
+
+        <br>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <script>
+            function changeTitleLoad() {
+                document.title = "You Found The Easter Egg!";
+            }
+            
             anime({
                 targets: '.asteroid1',
                 delay: 500,
@@ -50,7 +81,7 @@
     </body>
 
     <footer>
-        <hr>
+        <hr class="footerHr">
         <p>Copyright &copy 2023 | pluto</p>
     </footer>
 </html>
