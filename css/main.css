@@ -5,6 +5,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#yomogi {
+  font-family: "Yomogi"
+}
+
 .asteroid1 {
   width: 79px;
   height: 75px;
